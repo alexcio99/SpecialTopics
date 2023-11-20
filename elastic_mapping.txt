@@ -1,0 +1,34 @@
+PUT /personal_knowledge_base
+{
+  "mappings": {
+    "properties": {
+      "title": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        "analyzer":"standard"
+        }
+      },
+      "content": {
+        "type": "text",
+        "analyzer":"standard"
+      },
+      "tags": {
+        "type": "keyword"
+      },
+      "timestamp": {
+        "type": "date"
+      }
+    }
+  }
+}
+
+title: Represents the title of the knowledge base entry. It's of type text for full-text search, and an additional keyword field is included for exact match searches. I will use standard analyzer thanks to its general-purpose use in text fields. It tokenizes text into words, removes most punctuation, and lowercases the words.
+
+content: Represents the content or details of the knowledge base entry. It's of type text for full-text search. Same analyzer as for title.
+
+tags: Represents tags associated with the entry. It's of type keyword for efficient filtering.
+
+timestamp: Represents the timestamp of when the entry was created or last modified. It's of type date for date-related queries.
