@@ -9,12 +9,12 @@ A Personal Knowledge Base is a central repository for individuals to store, orga
 # Technologies to be used:
 - Front-End Framework: React - a modern front-end framework
 - Back-End Framework: Node.js to build the server-side logic of our PKB application
-- Database: Elastic Cloud itself is excellent for text indexing and search
+- Database: Elastic Cloud itself is excellent for text indexing and searching
 
 # REST API Structure
-GET /notes: Get a list notes.
-GET /notes/{note_id}: Get details of a specific note.
-POST /notes: Create a new note.
-PUT /notes/{note_id}: Update a note.
-DELETE /notes/{note_id}: Delete a note.
-GET /search: Search for notes based on keywords and filters.
+- GET /notes: Get a list notes.
+- GET /notes/{note_id}: Get details of a specific note.
+- POST /notes: Create a new note.
+- PUT /notes/{note_id}: Update a note.
+- DELETE /notes/{note_id}: Delete a note.
+- GET /search: Search for notes based on keywords and filters.
