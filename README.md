@@ -17,4 +17,4 @@ A Personal Knowledge Base is a central repository for individuals to store, orga
 - POST /notes: Create a new note.
 - PUT /notes/{note_id}: Update a note.
 - DELETE /notes/{note_id}: Delete a note.
-- GET /search: Search for notes based on keywords and filters.
+- GET /notes/_search: Search for notes based on keywords and filters.
